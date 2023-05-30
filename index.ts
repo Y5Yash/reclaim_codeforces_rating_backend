@@ -24,7 +24,7 @@ const reclaim = new reclaimprotocol.Reclaim()
 function buildTemplate(callbackUrl:string, rating:string) {
     responseSelections = [ { responseMatch: `.*Rating.*${rating}</span>` } ];
     const connection = reclaim.connect(
-      "CodeForces Rating",  // a title that will be shown to the user
+      `My CodeForces Rating ${rating}`,  // a title that will be shown to the user
                                         // Good to mention what proof you're seeking
   
       [                                 // List of proofs you need from the user
